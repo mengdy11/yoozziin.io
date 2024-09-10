@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Weed Cambodia</title>
+    <link rel="stylesheet" href="../dy.css">
+</head>
+<body>
+
+    <form onsubmit="sendEmail(); reset(); return false;">
+    <header>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="../img/Watermelon.jpg" alt="Watermelon">
+            <h2>Watermelon</h2>
+            <h3>1 BOX = $5.99</h3>
+            <button><a href="aba.html">Buy</a></button>
+        </div>
+        <div class="product">
+            <img src="../img/longan.jpg" alt="Longan Storm">
+            <h2>Longan Storm</h2>
+            <h3>1 BOX = $5.99</h3>
+            <button><a href="aba.html">Buy</a></button>
+        </div>
+        <div class="product">
+            <img src="../img/redbull.jpg" alt="Red Bull">
+            <h2>Red Bull</h2>
+            <h3>1 BOX = $5.99</h3>
+            <button><a href="aba.html">Buy</a></button>
+        </div>
+        <div class="product">
+            <img src="../img/Guava.jpg" alt="Guava">
+            <h2>Guava</h2>
+            <h3>1 BOX = $5.99</h3>
+            <button><a href="aba.html">Buy</a></button>
+        </div>
+       
+        <div class="product">
+            <img src="../img/Sprite.jpg" alt="Sprite">
+            <h2>Sprite</h2>
+            <h3>1 BOX = $5.99</h3>
+            <button><a href="aba.html">Buy</a></button>
+        </div>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Handle Buy button click
+    document.querySelectorAll('.buy-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Thank you for your purchase! We will be in touch soon.');
+        });
+    });
+
+
+});
+
+    </script>
+</body>
+</html>

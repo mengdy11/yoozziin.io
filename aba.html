@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed Cambodia</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="../aba.css">
+</head>
+<body>
+
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+
+            <h1>Pay Money buy</h1>
+
+            <center><img src="../img/aba.jpg" style="width: 7cm;"></center>
+
+            <h1>Telegram me : +855 15-663-024</h1>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="namebank" placeholder="Namebank" required>
+            <input type="text" id="Addres" placeholder="Addres" required>
+            <textarea id="message" cols="30" rows="4" placeholder="Leave your message"></textarea>
+            <button id="submit" type="submit"> send </button>
+      
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "b4f6afc9-6cec-46dc-b2dc-f421174a3d42",
+                To : 'hoengmengdy.biu@gmail.com',
+                From : "hoengmengdy.biu@gmail.com",
+                Subject : "Email",
+                Body : "name:  " + document.getElementById("name").value
+                       + "<br> Email:  " + document.getElementById("email").valiu
+                       + "<br> phone no:  " + document.getElementById("phone").valiu
+                       + "<br> message:  " + document.getElementById("message").valiu
+            }).then(
+              message => alert("message sent succesfully")
+            );
+        }
+    </script>
+</body>
+</html>
